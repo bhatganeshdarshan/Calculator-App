@@ -61,11 +61,12 @@ class MainActivity : AppCompatActivity() {
 
     }
     fun onEql(view: View) {
-        isDotClicked = true
-        isOpClicked = false
+
 
         n2 = inp?.text.toString()
         if(!isCal){
+            isDotClicked = true
+            isOpClicked = false
             isCal=true
             if (op != null) {
                 val indexOp = n2!!.lastIndexOf("$op")
